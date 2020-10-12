@@ -1,4 +1,5 @@
 export const fonts = {
   title: "Montserrat",
-  body: "Open Sans"
+  body: "Open Sans",
+  icon: "SFProText",
 };

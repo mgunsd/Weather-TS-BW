@@ -1,8 +1,14 @@
-import React, { FC } from 'react';
-import { ResponsiveMain, H1 } from 'components';
+import React, {useContext, FC } from 'react';
+import { WeatherContext } from 'context';
+import { ResponsiveMain, H1, Forecast } from 'components';
 
-export const Detail: FC = () => (
+export const Detail: FC = () => {
+  const { state:{city}} = useContext(WeatherContext);
+ 
+return (
   <ResponsiveMain>
-    <H1>Details</H1>
+    <H1>{city}</H1>
+    <Forecast/>
   </ResponsiveMain>
 );
+}

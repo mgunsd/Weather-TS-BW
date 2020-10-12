@@ -3,7 +3,7 @@ import { WeatherContext } from 'context';
 import { ResponsiveMain, H1, CurrentWeather } from 'components';
 
 export const Home: FC = () => {
-  const { state:{city}, selectCity } = useContext(WeatherContext);
+  const { state:{city}} = useContext(WeatherContext);
  
 return (
   <ResponsiveMain>

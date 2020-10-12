@@ -18,7 +18,9 @@ const Main = styled.main`
   ${Container}
   flex: 4;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 `;
 
 export const ResponsiveMain = ({ children }) => {

@@ -1,6 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+
+@font-face {
+  font-family: "SFProText";
+  font-weight: normal;
+  src: local("SFProText-Regular"),
+    url(../assets/fonts/SFProText-Regular.otf) format("opentype");
+}
+
+
 *,
 *::before,
 *::after {
