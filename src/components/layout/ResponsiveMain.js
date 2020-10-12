@@ -19,6 +19,7 @@ const Main = styled.main`
   flex: 4;
   display: flex;
   flex-direction: column;
+  padding:5vw;
   justify-content: flex-end;
   align-items: flex-start;
 `;

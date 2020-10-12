@@ -40,7 +40,7 @@ export const ButtonStyles = css`
   }
   &.active{
     ${Text}{
-      color: ${Color('base')};
+      color: ${Color('text')};
       };
   }
   &:disabled{

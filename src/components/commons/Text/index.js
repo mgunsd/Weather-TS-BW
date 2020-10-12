@@ -15,7 +15,7 @@ ${Typography}
 `;
 
 export const H4 = styled.h4`
-font: normal bold 4vw / 1.5em ${Font('title')};
+font: normal bold 3vw / 1.5em ${Font('title')};
 text-transform: uppercase;
 ${Typography}
 `;

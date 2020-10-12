@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { WeatherContext } from 'context';
-import { Button, Link } from '../commons';
+import { Button, Link, H4 } from '../commons';
 import { Container } from './Container';
 
 const SideContainer = styled.div`
@@ -36,7 +36,10 @@ export const Side = () => {
           <Link to={'/detail'} onClick={() => showForcast(city)}>Show Forcast</Link>
         </>
         :
-        <Link to={'/'} onClick={() => selectCity(city)}>Back</Link>
+        <>
+          <H4>{city}</H4>
+          <Link to={'/'} onClick={() => selectCity(city)}>Back</Link>
+        </>
       }
     </SideContainer >
   );
