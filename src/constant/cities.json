@@ -1,0 +1,8 @@
+[
+  {"city_id":2643743,"city_name":"London","state_code":"ENG","country_code":"GB","country_full":"United Kingdom","lat":51.50853,"lon":-0.12574},
+  {"city_id":1275339,"city_name":"Mumbai","state_code":"16","country_code":"IN","country_full":"India","lat":19.07283,"lon":72.88261},
+  {"city_id":5128581,"city_name":"New York City","state_code":"NY","country_code":"US","country_full":"United States","lat":40.71427,"lon":-74.00597},
+  {"city_id":2147714,"city_name":"Sydney","state_code":"02","country_code":"AU","country_full":"Australia","lat":-33.86785,"lon":151.20732},
+  {"city_id":1850147,"city_name":"Tokyo","state_code":"40","country_code":"JP","country_full":"Japan","lat":35.6895,"lon":139.69171}
+]
+
