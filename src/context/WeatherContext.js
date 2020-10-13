@@ -34,7 +34,7 @@ const selectCity = dispatch => async (city) => {
     dispatch({ type: 'error', payload: err });
   }
 };
-const showForcast = dispatch => async (city) => {
+const showForecast = dispatch => async (city) => {
   try {
     const response = await weatherbit.get('/forecast/daily', {
       params: { city: city },
@@ -52,7 +52,7 @@ const showForcast = dispatch => async (city) => {
 
 export const { Provider, Context } = buildContext(
   WeatherReducer,
-  { selectCity, showForcast },
+  { selectCity, showForecast },
   {
     city: 'London',
     menu: true,

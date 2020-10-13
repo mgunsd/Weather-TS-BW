@@ -20,20 +20,20 @@ const Cities = styled.div`
 `;
 
 export const Side = () => {
-  const { state: { city, menu }, showForcast, selectCity } = useContext(WeatherContext);
+  const { state: { city, menu }, showForecast, selectCity } = useContext(WeatherContext);
 
   return (
     <SideContainer >
       {menu ?
         <>
           <Cities>
-            <Button onClick={() => selectCity('London')}>London</Button>
+            <Button onClick={() => selectCity('London, UK')}>London</Button>
             <Button onClick={() => selectCity('New York')}>New York</Button>
             <Button onClick={() => selectCity('Mumbai')}>Mumbai</Button>
-            <Button onClick={() => selectCity('Sydney')}>Sydney</Button>
+            <Button onClick={() => selectCity('Sydney, AU')}>Sydney</Button>
             <Button onClick={() => selectCity('Tokyo')}>Tokyo</Button>
           </Cities>
-          <Link to={'/detail'} onClick={() => showForcast(city)}>Show Forcast</Link>
+          <Link to={'/detail'}>Show Forcast</Link>
         </>
         :
         <>
