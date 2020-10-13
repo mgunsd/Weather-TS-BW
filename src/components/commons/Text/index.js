@@ -21,18 +21,11 @@ ${Typography}
 `;
 
 //General
-export const Body2 = styled.p`
-font: normal normal 18px / 37px ${Font('body')};
-color: ${Color('body')};
-`;
 
 export const Regular = css`
-  font: normal 400 1vw / 1.5em ${Font('title')};
-  //display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font: normal normal 1vw / 1.5em ${Font('title')};
+  display: block;
+  margin: .67em 0;
   text-decoration: none;
   ${Typography}
   @media (max-width: 991px){
@@ -46,6 +39,12 @@ export const Regular = css`
 
 export const Body = styled.p`
   ${Regular}
+`;
+
+export const Label = styled.p`
+ ${Regular}
+font: normal bold 18px / 37px ${Font('body')};
+color: ${Color('body')};
 `;
 
 export const A = styled.a`
