@@ -17,15 +17,12 @@ const WeatherReducer = (state, action) => {
   }
 };
 
-//i could seperate api and reference to weatherbit
-
 const selectCity = dispatch => async (city) => {
   try {
     const response = await weatherbit.get('/current', {
       params: { city: city },
     });
-
-    console.log(response.data.data[0]);
+    //console.log(response.data.data[0]);
     dispatch({ type: 'city', payload: city })
     dispatch({ type: 'weather', payload: response.data.data[0] });
     dispatch({ type: 'menu', payload: true });
@@ -39,8 +36,7 @@ const showForecast = dispatch => async (city) => {
     const response = await weatherbit.get('/forecast/daily', {
       params: { city: city },
     });
-
-    console.log(response.data.data);
+    //console.log(response.data.data);
     dispatch({ type: 'city', payload: city })
     dispatch({ type: 'forcast', payload: response.data.data });
     dispatch({ type: 'menu', payload: false });

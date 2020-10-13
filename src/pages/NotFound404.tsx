@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Color, Font } from 'utils';
 //const c = Color('text');
@@ -34,7 +34,7 @@ const Fof = styled.h1`
   animation: ${rotate} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 `;
 
-export const NotFound404 = () => {
+export const NotFound404: FC = () => {
   return (
     <Base>
       <Fof>

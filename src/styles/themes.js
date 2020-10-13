@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, FC } from "react";
 import { ThemeProvider, ThemeContext } from "styled-components";
 import { colors as c } from './colors';
 import { fonts as f } from './fonts';

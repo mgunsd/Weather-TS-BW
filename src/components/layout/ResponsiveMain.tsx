@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { Side } from './Side';
 import { Container } from './Container';
@@ -23,8 +23,7 @@ const Main = styled.main`
   justify-content: flex-end;
   align-items: flex-start;
 `;
-
-export const ResponsiveMain = ({ children }) => {
+export const ResponsiveMain:FC= ({ children }) => {
   return (
     <Base>
       <Main>{children}</Main>

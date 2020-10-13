@@ -21,13 +21,13 @@ export const Forecast = () => {
     showForecast(city)
   }, [city]);
 
-  const days = forecast.map((date) => {
+  const days = forecast.map((date, i) => {
     return (
       <Row>
-        <Body key={date.datetime}>aa{date.datetime}</Body>
-        <Body key={date.datetime}>bb{date.high_temp}</Body>
-        <Body key={date.datetime}>cc{date.low_temp}</Body>
-        <Body key={date.datetime}>dd{date.weather.description}</Body>
+        <Body key={i}>aa{date.datetime}</Body>
+        <Body key={i}>bb{date.high_temp}</Body>
+        <Body key={i}>cc{date.low_temp}</Body>
+        <Body key={i}>dd{date.weather.description}</Body>
       </Row>
     )
   })

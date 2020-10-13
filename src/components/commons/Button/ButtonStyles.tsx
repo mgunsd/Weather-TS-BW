@@ -3,7 +3,6 @@ import { Color, Font } from 'utils';
 
 export const Text = styled.p`
   font: ${Font('body')};
-  margin: ${props => props.margin};
   `;
 
 export const ButtonStyles = css`

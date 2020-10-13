@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { FC, useContext } from 'react';
 import styled from 'styled-components';
 import { WeatherContext } from 'context';
 import { Button, Link, H4 } from '../commons';
@@ -18,6 +18,7 @@ const Cities = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
 
 export const Side = () => {
   const { state: { city, menu }, showForecast, selectCity } = useContext(WeatherContext);
